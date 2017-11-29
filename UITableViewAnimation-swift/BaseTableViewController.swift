@@ -10,6 +10,9 @@ import UIKit
 
 class BaseTableViewController: UITableViewController {
 
+    var index : Int?
+    var cellCount : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +21,49 @@ class BaseTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.view.backgroundColor = UIColor.white
+        
+        cellCount = 0
+        
+        makeData()
+        
     }
 
+    func makeData() {
+        cellCount = 15
+        self.tableView.reloadData()
+        starAnimationWithTableView()
+    }
+    
+    func starAnimationWithTableView() {
+        switch self.index {
+        case 0?:
+            TableViewAnimatuinKit.moveAnimationWithTableView(self.tableView)
+        case 1?:
+            TableViewAnimatuinKit.alphaAnimationWithTableView(self.tableView)
+        case 2?:
+            TableViewAnimatuinKit.fallAnimationWithTableView(self.tableView)
+        case 3?:
+            TableViewAnimatuinKit.shakeAnimationWithTableView(self.tableView)
+        case 4?:
+            TableViewAnimatuinKit.overTurnAnimationWithTableView(self.tableView)
+        case 5?:
+            TableViewAnimatuinKit.toTopAnimationWithTableView(self.tableView)
+        case 6?:
+            TableViewAnimatuinKit.springListAnimationWithTableView(self.tableView)
+        case 7?:
+            TableViewAnimatuinKit.shrinkToTopAnimationWithTableView(self.tableView)
+        case 8?:
+            TableViewAnimatuinKit.layDonwAnimationWithTableView(self.tableView)
+        case 9?:
+            TableViewAnimatuinKit.roteAnimationWithTableView(self.tableView)
+        
+            
+        default:
+            TableViewAnimatuinKit.moveAnimationWithTableView(self.tableView)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,23 +73,24 @@ class BaseTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cellCount!
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "Cell")
 
-        // Configure the cell...
-
+        cell.textLabel?.text = "第" + String(self.index! + 1) + "种动画cell"
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

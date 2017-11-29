@@ -6,4 +6,15 @@
 //  Copyright © 2017年 yzj. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+//当前屏幕->宽
+func kScreenWidth() ->CGFloat {
+    return UIScreen.main.bounds.size.width
+}
+
+//当前屏幕->高
+func kScreenHeight() ->CGFloat {
+    return UIScreen.main.bounds.size.height
+}
+

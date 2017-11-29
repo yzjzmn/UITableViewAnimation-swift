@@ -173,7 +173,7 @@ class TableViewAnimatuinKit: NSObject {
         let animation = CABasicAnimation.init(keyPath: "transform.rotation.y")
         animation.fromValue = [-Double.pi]
         animation.toValue = 0
-        animation.duration = 0.5
+        animation.duration = 0.2
         animation.isRemovedOnCompletion = false
         animation.repeatCount = 3
         animation.fillMode = kCAFillModeForwards
@@ -184,7 +184,7 @@ class TableViewAnimatuinKit: NSObject {
             let cell = tableView.visibleCells[i]
             cell.alpha = 0.0
             
-            UIView.animate(withDuration: totalTime, delay: (Double(i) * 0.3),  options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: totalTime, delay: (Double(i) * 0.1),  options: .curveEaseInOut, animations: {
                 cell.alpha = 1.0
             }, completion: { (finish) in
                 cell.layer.animation(forKey: "rotationYkey")

@@ -14,6 +14,9 @@
 		1FFEE11B1FCD4CC40067CF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFEE1191FCD4CC40067CF6A /* LaunchScreen.storyboard */; };
 		1FFEE1261FCD4CC40067CF6A /* UITableViewAnimation_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE1251FCD4CC40067CF6A /* UITableViewAnimation_swiftTests.swift */; };
 		1FFEE1311FCD4CC40067CF6A /* UITableViewAnimation_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE1301FCD4CC40067CF6A /* UITableViewAnimation_swiftUITests.swift */; };
+		1FFEE13F1FCD4F0F0067CF6A /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE13E1FCD4F0F0067CF6A /* BaseTableViewController.swift */; };
+		1FFEE1411FCD53780067CF6A /* TableViewAnimatuinKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE1401FCD53780067CF6A /* TableViewAnimatuinKit.swift */; };
+		1FFEE1441FCD55B30067CF6A /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE1431FCD55B30067CF6A /* PrefixHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		1FFEE12C1FCD4CC40067CF6A /* UITableViewAnimation-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewAnimation-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFEE1301FCD4CC40067CF6A /* UITableViewAnimation_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewAnimation_swiftUITests.swift; sourceTree = "<group>"; };
 		1FFEE1321FCD4CC40067CF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFEE13E1FCD4F0F0067CF6A /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		1FFEE1401FCD53780067CF6A /* TableViewAnimatuinKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAnimatuinKit.swift; sourceTree = "<group>"; };
+		1FFEE1431FCD55B30067CF6A /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				1FFEE1101FCD4CC40067CF6A /* AppDelegate.swift */,
 				1FFEE1121FCD4CC40067CF6A /* ViewController.swift */,
+				1FFEE13E1FCD4F0F0067CF6A /* BaseTableViewController.swift */,
+				1FFEE1431FCD55B30067CF6A /* PrefixHeader.swift */,
+				1FFEE1401FCD53780067CF6A /* TableViewAnimatuinKit.swift */,
 				1FFEE1141FCD4CC40067CF6A /* Main.storyboard */,
 				1FFEE1171FCD4CC40067CF6A /* Assets.xcassets */,
 				1FFEE1191FCD4CC40067CF6A /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFEE13F1FCD4F0F0067CF6A /* BaseTableViewController.swift in Sources */,
 				1FFEE1131FCD4CC40067CF6A /* ViewController.swift in Sources */,
 				1FFEE1111FCD4CC40067CF6A /* AppDelegate.swift in Sources */,
+				1FFEE1411FCD53780067CF6A /* TableViewAnimatuinKit.swift in Sources */,
+				1FFEE1441FCD55B30067CF6A /* PrefixHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
