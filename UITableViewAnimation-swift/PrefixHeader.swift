@@ -8,13 +8,6 @@
 
 import UIKit
 
-//当前屏幕->宽
-func kScreenWidth() ->CGFloat {
-    return UIScreen.main.bounds.size.width
-}
-
-//当前屏幕->高
-func kScreenHeight() ->CGFloat {
-    return UIScreen.main.bounds.size.height
-}
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenHeight = UIScreen.main.bounds.size.height
 

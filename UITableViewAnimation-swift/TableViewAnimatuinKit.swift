@@ -45,7 +45,7 @@ class TableViewAnimatuinKit: NSObject {
         let totalTime = 0.7
         for i in 0 ..< cells.count {
             let cell = tableView.visibleCells[i]
-            cell.transform = CGAffineTransform(translationX: 0, y: -kScreenHeight())
+            cell.transform = CGAffineTransform(translationX: 0, y: -kScreenHeight)
             UIView.animate(withDuration: totalTime, delay: (Double(i) * totalTime/Double(cells.count)), usingSpringWithDamping: 0.3, initialSpringVelocity: 1/0.7, options: .curveEaseIn, animations: {
                 cell.transform = __CGAffineTransformMake(1, 0, 0, 1, 0, 0)
             }, completion: { (finish) in
@@ -99,7 +99,7 @@ class TableViewAnimatuinKit: NSObject {
 
         for i in 0 ..< cells.count {
             let cell = tableView.visibleCells[i]
-            cell.transform = CGAffineTransform(translationX: 0, y: kScreenHeight())
+            cell.transform = CGAffineTransform(translationX: 0, y: kScreenHeight)
             UIView.animate(withDuration: totalTime, delay: (Double(i) * totalTime/Double(cells.count)), usingSpringWithDamping: 0.7, initialSpringVelocity: 1/0.7, options: .curveEaseOut, animations: {
                 cell.transform = __CGAffineTransformMake(1, 0, 0, 1, 0, 0)
             }, completion: { (finish) in
@@ -115,7 +115,7 @@ class TableViewAnimatuinKit: NSObject {
         for i in 0 ..< cells.count {
             let cell = tableView.visibleCells[i]
             cell.layer.opacity = 0.7
-            cell.layer.transform = CATransform3DMakeTranslation(0, -kScreenHeight(), 20)
+            cell.layer.transform = CATransform3DMakeTranslation(0, -kScreenHeight, 20)
             
             UIView.animate(withDuration: totalTime, delay: (Double(i) * totalTime/Double(cells.count)), usingSpringWithDamping: 0.7, initialSpringVelocity: 1/0.7, options: .curveEaseIn, animations: {
                 cell.layer.opacity = 1.0
