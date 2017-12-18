@@ -8,8 +8,51 @@
 
 import UIKit
 
+enum AnimationStyle {
+    case move//移动
+    case alpha//透明度
+    case fall//瀑布式
+    case shake//震动式
+    case overTurn//覆盖式
+    case toTop//向上
+    case springList//弹簧式
+    case shrinkToTop//收缩式
+    case layDown//沉积式
+    case rote//机械式
+}
+
 class TableViewAnimatuinKit: NSObject {
 
+    
+    class func animationWith(_ tableView:UITableView, style:AnimationStyle) {
+        
+        switch style {
+        case .move:
+            moveAnimationWithTableView(tableView)
+        case .alpha:
+            alphaAnimationWithTableView(tableView)
+        case .fall:
+            fallAnimationWithTableView(tableView)
+        case .shake:
+            shakeAnimationWithTableView(tableView)
+        case .overTurn:
+            overTurnAnimationWithTableView(tableView)
+        case .toTop:
+            toTopAnimationWithTableView(tableView)
+        case .springList:
+            springListAnimationWithTableView(tableView)
+        case .shrinkToTop:
+            shrinkToTopAnimationWithTableView(tableView)
+        case .layDown:
+            layDownAnimationWithTableView(tableView)
+        case .rote:
+            roteAnimationWithTableView(tableView)
+            
+        default: break
+            
+        }
+    }
+    
     class func moveAnimationWithTableView(_ tableView:UITableView) {
         let cells = tableView.visibleCells
         let totalTime = 0.3
@@ -141,7 +184,7 @@ class TableViewAnimatuinKit: NSObject {
         }
     }
     
-    class func layDonwAnimationWithTableView(_ tableView:UITableView) {
+    class func layDownAnimationWithTableView(_ tableView:UITableView) {
         let cells = tableView.visibleCells
         var rectArr = [AnyObject]()
         let totalTime = 0.3

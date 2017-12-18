@@ -38,29 +38,28 @@ class BaseTableViewController: UITableViewController {
     func starAnimationWithTableView() {
         switch self.index {
         case 0?:
-            TableViewAnimatuinKit.moveAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .move)
         case 1?:
-            TableViewAnimatuinKit.alphaAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .alpha)
         case 2?:
-            TableViewAnimatuinKit.fallAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .fall)
         case 3?:
-            TableViewAnimatuinKit.shakeAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .shake)
         case 4?:
-            TableViewAnimatuinKit.overTurnAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .overTurn)
         case 5?:
-            TableViewAnimatuinKit.toTopAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .toTop)
         case 6?:
-            TableViewAnimatuinKit.springListAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .springList)
         case 7?:
-            TableViewAnimatuinKit.shrinkToTopAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .shrinkToTop)
         case 8?:
-            TableViewAnimatuinKit.layDonwAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .layDown)
         case 9?:
-            TableViewAnimatuinKit.roteAnimationWithTableView(self.tableView)
+            TableViewAnimatuinKit.animationWith(self.tableView, style: .rote)
         
+        default: break
             
-        default:
-            TableViewAnimatuinKit.moveAnimationWithTableView(self.tableView)
         }
     }
     
